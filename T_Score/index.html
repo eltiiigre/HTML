@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>T-Score Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <div id="nav-container" id="upnav">
+            <button class="Sample" id="btn1">T-Score Calculator</button>
+            <button class="Population" id="btn2">Population Mean Calculator</button>
+        </div>
+        
+       <div class="FlexContainer">
+           <form class="Box">
+                <div class="header1">
+                    <h1>Population Mean</h1>
+                </div>
+                
+                <div class="PopulationContainer">
+                    <div class="row1">
+                        <div>
+                            <input type="text" class="MainItems" placeholder="Main Items" id="m1" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="SubItems" placeholder="Sub Items" id="s1" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="MainItems" placeholder="Main Items" id="m2" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="SubItems" placeholder="Sub Items" id="s2" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="MainItems" placeholder="Main Items" id="m3" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="SubItems" placeholder="Sub Items" id="s3" required>
+                        </div>
+        
+                    </div>
+                    
+                    <div class="row2">
+                        <div>
+                            <input type="text" class="MainItems" placeholder="Main Items" id="m4" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="SubItems" placeholder="Sub Items" id="s4" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="MainItems" placeholder="Main Items" id="m5" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="SubItems" placeholder="Sub Items" id="s5" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="MainItems" placeholder="Main Items" id="m6" required>
+                        </div>
+        
+                        <div>
+                            <input type="text" class="SubItems" placeholder="Sub Items" id="s6" required>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="PopulationResult">
+                    <div>
+                        <input type="text" class="PopulationCalculator" placeholder="Population Mean">
+                    </div>
+    
+                    <div>
+                        <button class="ButtonPopulation" id="populationButton">Calculate</button>
+                    </div>
+                </div>
+                
+           </form>
+
+           <form class="container">
+            <div class="header">
+                <h1>T-Score Calculator</h1>
+            </div>
+    
+            <div class="input1">
+              
+                <input type="text" name="SampleMean" id="sampleMean"
+                class="inputs" placeholder="Sample Mean" readonly>
+            </div>
+    
+            <div class="input2">
+               
+                <input type="text" name="PopulationMean" class="inputs" id="populationMean" placeholder="Population Mean" readonly>
+            </div>
+    
+            <div class="input3">
+                
+                <input type="text" name="StandardDeviation" class="inputs" id="standardDeviation" placeholder="Standard Deviation">
+            </div>
+
+            <div class="input4">
+              
+                <input type="text" name="SampleSize" id="sampleSize" class="inputs" placeholder="Sample Size" readonly>
+            </div>
+
+            <div class="UserInput">
+                <input type="text" name="User" id="userInput">
+               </div>
+            
+            <button class="btn" id="calculate">Calculate</button>
+            
+            <script src="index.js"></script>
+    
+        </form>
+       </div>
+        
+    </section>
+   
+</body>
+</html>
